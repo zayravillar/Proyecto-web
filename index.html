@@ -77,35 +77,35 @@
             <div class="mb-3">
               <label class="form-label" for="nombre">Nombre:</label>
               <input type="text" name="nombre" id="nombre" class="form-control" required pattern="[a-zA-Z\sáÁéÉÍóÓúÚ]+">
-              <div class="invdalid-feedback">
+              <div class="invalid-feedback">
                 Es necesario escribir el nombre
               </div>
             </div>
-            
+
             <div class="mb-3">
               <label class="form-label" for="apellido">Apellido:</label>
               <input type="text" id="apellido" class="form-control" required>
-              <div class="invdalid-feedback">
+              <div class="invalid-feedback">
                 Es necesario escribir el nombre
               </div>
             </div>
-            
+
             <div class="mb-3">
               <label class="form-label" for="correo">Correo:</label>
               <input type="email" id="correo" class="form-control" required>
-              <div class="invdalid-feedback">
+              <div class="invalid-feedback">
                 Es necesario escribir el email
               </div>
             </div>
-            
+
             <div class="mb-3">
               <label class="form-label" for="telefono">Teléfono:</label>
               <input type="tel" id="telefono" class="form-control" required>
-              <div class="invdalid-feedback">
+              <div class="invalid-feedback">
                 Es necesario escribir el teléfono
               </div>
             </div>
-            
+
             <div class="mb-3">
               <label class="form-label" for="base">Tipo de trabajo</label>
               <select id="base" class="form-select" required>
@@ -114,41 +114,46 @@
                 <option>Diseño avanzado 1400€</option>
                 <option>Panel de administración 2500€</option>
               </select>
-              <div class="invdalid-feedback">
+              <div class="invalid-feedback">
                 Es necesario eseleccionar una opción
               </div>
             </div>
-            
+
             <div class="mb-3">
               <label class="form-label" for="plazo">Plazo en meses:</label>
               <input type="number" min="0" id="plazo" class="form-control" required>
-              <div class="invdalid-feedback">
+              <div class="invalid-feedback">
                 Es necesario escribir el plazo
               </div>
             </div>
-            
-            <div class="mb-3">
-              <input type="checkbox" id="galeria" class="form-check-input">
-              <label for="galeria" class="form-check-label">Galería</label>
+            <div class="row row-cols-2 g-3">
+              <div class="col">
+                <input type="checkbox" id="galeria" class="form-check-input">
+                <label for="galeria" class="form-check-label">Galería</label>
+              </div>
+
+              <div class="col">
+                <input type="checkbox" id="formulario" class="form-check-input">
+                <label for="formulario" class="form-check-label">Formulario de presupuesto</label>
+              </div>
+              <div class="col">
+                <input type="checkbox" id="ecom" class="form-check-input">
+                <label for="ecom" class="form-check-label">Tienda</label>
+              </div>
+              <div class="col">
+                <input type="checkbox" id="redes" class="form-check-input">
+                <label for="redes" class="form-check-label">Redes sociales</label>
+              </div>
+              <div class="col">
+                <input type="checkbox" id="localiz" class="form-check-input">
+                <label for="localiz" class="form-check-label">Mapa localización interactivo</label>
+              </div>
+              <div class="col">
+                <input type="checkbox" id="soporteweb" class="form-check-input">
+                <label for="soporteweb" class="form-check-label">Soporte Web</label>
+              </div>
             </div>
-            
-            <div class="mb-3">
-              <input type="checkbox" id="formulario" class="form-check-input">
-              <label for="formulario" class="form-check-label">Formulario de presupuesto</label>
-              <input type="checkbox" id="ecom" class="form-check-input">
-              <label for="ecom" class="form-check-label">Tienda</label>
 
-              <input type="checkbox" id="redes" class="form-check-input">
-              <label for="redes" class="form-check-label">Redes sociales</label>
-
-
-              <input type="checkbox" id="localiz" class="form-check-input">
-              <label for="localiz" class="form-check-label">Mapa localización interactivo</label>
-
-              <input type="checkbox" id="soporteweb" class="form-check-input">
-              <label for="soporteweb" class="form-check-label">Soporte Web</label>
-            </div>
-        
 
             <label class="form-label" for="total">Presupuesto estimado:</label>
             <input type="text" id="total" class="form-control" readonly>
@@ -156,12 +161,12 @@
             <input type="checkbox" id="privacidad" class="form-check-input" required>
             <label for="privacidad" class="form-check-label">He leido la política de privacidad</label>
             <div class="invalid-feedback">
-                Es necesario aceptar esta opción
-              </div>
+              Es necesario aceptar esta opción
+            </div>
             <div>
               <button type="submit" class="btn btn-primary">Enviar datos</button>
             </div>
-            
+
           </form>
 
           <!--Noticias-->
