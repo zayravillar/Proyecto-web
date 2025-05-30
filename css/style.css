@@ -19,3 +19,7 @@ footer{
 .size-card{
     width: 18rem;
 }
+.carrousel-item img{
+    object-fit: cover;
+    max-height: 50vh;
+}
