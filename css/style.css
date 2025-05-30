@@ -16,3 +16,6 @@ main{
 footer{
     grid-area: my-footer;
 }
+.size-card{
+    width: 18rem;
+}
